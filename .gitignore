@@ -9,7 +9,7 @@ Icon
 # Actionsflow
 actionsflow-cache-key.txt
 .actionsflow
-.secrets
+# .secrets
 # Thumbnails
 ._*
 
