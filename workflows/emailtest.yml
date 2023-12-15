@@ -3,8 +3,8 @@ on:
   email:
     imap:
       host: imap.gmail.com
-      user: ${{secrets.EMAIL_USER}}
-      password: ${{secrets.EMAIL_PASSWORD}}
+      user: actionsflowtest@gmail.com
+      password: 7SFfp1GjG6tgviui
       port: 993
       tls: true
       tlsOptions: { rejectUnauthorized: false }
