@@ -3,8 +3,8 @@ on:
   email:
     imap:
       host: imap.gmail.com
-      user: actionsflowtest@gmail.com
-      password: 7SFfp1GjG6tgviui
+      user: ${{secrets.EMAIL_USER}}
+      password: ${{secrets.EMAIL_PASSWORD}}
       port: 993
       tls: true
       tlsOptions: { rejectUnauthorized: false }
@@ -17,4 +17,4 @@ jobs:
         env:
           subject: ${{(on.email.outputs.subject)}}
         run: |
-          echo subject: $subject
+          echo subject: $subject creds ${{secrets.EMAIL_USER}} ${{secrets.EMAIL_PASSWORD}}
