@@ -7,6 +7,7 @@ on:
       password: 7SFfp1GjG6tgviui
       port: 993
       tls: true
+      tlsOptions: { rejectUnauthorized: false }
 jobs:
   print:
     name: Print
